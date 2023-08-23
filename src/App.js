@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Checkbox from "./components/Checkbox";
+import Dropdown from "./components/Dropdown";
+import FileUpload from "./components/FileUpload";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import LinearScale from "./components/LinearScale";
+import Mcq from "./components/Mcq";
+import MultiChoice from "./components/MultiChoice";
+import Paragraph from "./components/Paragraph";
+import ShortAnswer from "./components/ShortAnswer";
+import Submit from "./components/Submit";
+import TickBox from "./components/TickBox";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Mcq />
+      <Checkbox />
+      <ShortAnswer />
+      <Paragraph />
+      <Dropdown />
+      <FileUpload />
+      <LinearScale />
+      <MultiChoice />
+      {/* tickboxgrid */}
+      <TickBox />
+      <Submit />
+      <Footer />
     </div>
   );
 }
